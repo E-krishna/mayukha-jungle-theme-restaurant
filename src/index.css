@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #123B2A;
+    --color-jungle: #1F6045;
+    --color-cream: #F7F1E3;
+    --color-sand: #E8D8B8;
+    --color-gold: #D6A84F;
+    --color-charcoal: #17231D;
+    --color-muted-leaf: #7D9B78;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #17231D;
+    background-color: #F7F1E3;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes floatLeaf {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(6deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes mistMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-sway-slow {
+  animation: sway 7s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.animate-sway-reverse {
+  animation: sway 8.5s ease-in-out infinite reverse;
+  transform-origin: top center;
+}
+
+.animate-float-leaf {
+  animation: floatLeaf 5.5s ease-in-out infinite;
+}
+
+.animate-float-leaf-delayed {
+  animation: floatLeaf 7s ease-in-out infinite 2s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #123B2A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F6045;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D6A84F;
+}

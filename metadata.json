@@ -1,0 +1,6 @@
+{
+  "name": "Mayukha Jungle Theme Restaurant",
+  "description": "Discover Mayukha Jungle Theme Restaurant in KPHB, Hyderabad—a unique jungle-themed dining experience for delicious meals, gatherings, and memorable moments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
